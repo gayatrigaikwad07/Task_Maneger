@@ -1,0 +1,112 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-background {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .container {
+    background: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #taskInput {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  #addTaskBtn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 0 8px 8px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #addTaskBtn:hover {
+    background: #5a67d8;
+  }
+  
+  ul {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  /* Scroll styling */
+  ul::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ul::-webkit-scrollbar-thumb {
+    background-color: rgba(102, 126, 234, 0.5);
+    border-radius: 3px;
+  }
+  
+  li {
+    background: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+  }
+  
+  li:hover {
+    background-color: #ebebeb;
+  }
+  
+  li button {
+    background: #e53e3e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  li button:hover {
+    background: #c53030;
+  }
+  
